@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Application de démonstration permettant d'illustrer l'utilisation du protocole OAuth2 pour récupérer un token Trackdéchets",
   "scripts": {
-    "start": "npx ts-node -r dotenv/config src/app.ts",
+    "start": "ts-node -r dotenv/config src/app.ts",
     "test": "jest --setupFiles dotenv/config --force-exit"
   },
   "repository": {
@@ -27,7 +27,9 @@
     "express-session": "^1.17.0",
     "passport": "^0.4.1",
     "passport-oauth2": "^1.5.0",
-    "superagent": "^5.2.1"
+    "superagent": "^5.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
     "@types/ejs": "^3.0.0",
@@ -43,7 +45,5 @@
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2",
     "ts-jest": "^25.2.0",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
   }
 }
