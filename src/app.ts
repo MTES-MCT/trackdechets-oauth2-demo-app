@@ -49,8 +49,7 @@ app.get("/dashboard", async (req, res) => {
     return res.redirect("/");
   } else {
     const user = await getUser(req.user.token);
-    const forms = await getForms(req.user.token);
-    return res.render("dashboard", { user, forms });
+    return res.render("dashboard", { user });
   }
 });
 
